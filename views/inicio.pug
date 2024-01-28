@@ -1,0 +1,28 @@
+extends ./layout/index
+block slider 
+    .slider 
+        h1 Rio de Janairo 
+        em aventura 
+
+block contenido 
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6 
+                p entum tristique velit, sed accumsan nulla porta non. Nulla egestas nisi eu orci aliquam elementum. Aliquam quis lorem tempor, porttitor nunc id, vehicula ex. Sed efficitur enim in ante vestibulum ultrices. Aenean sed felis ultricies, cursus metus non, interdum tortor. Aliquam a nunc auctor nibh elementum feugiat. Curabitur dictum efficitur leo, nec rutrum justo elementum quis. 
+
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="imagen de nosotros", class="img-fluid")        
+        include  ./layout/bloque_viajes 
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Marzo de 2024 - 28 de MArzo del 2024
+                        p.precio $2,500 USD
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales 
